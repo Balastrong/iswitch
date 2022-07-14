@@ -1,0 +1,45 @@
+{
+  "name": "iswitch",
+  "version": "0.0.1",
+  "description": "Yet another inline switch on npm",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jestconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Balastrong/iswitch.git"
+  },
+  "keywords": [
+    "switch",
+    "inline",
+    "return"
+  ],
+  "author": "Leonardo Montini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Balastrong/iswitch/issues"
+  },
+  "homepage": "https://github.com/Balastrong/iswitch#readme",
+  "files": [
+    "lib/**/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^28.1.5",
+    "jest": "^28.1.3",
+    "prettier": "^2.7.1",
+    "ts-jest": "^28.0.6",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.7.4"
+  }
+}
