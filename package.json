@@ -1,7 +1,7 @@
 {
   "name": "iswitch",
-  "version": "0.0.1",
-  "description": "Yet another inline switch on npm",
+  "version": "0.0.3",
+  "description": "Yet another inline switch on npm - call it as a function with a return value",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -21,8 +21,11 @@
   },
   "keywords": [
     "switch",
+    "statement",
     "inline",
-    "return"
+    "react",
+    "return",
+    "function"
   ],
   "author": "Leonardo Montini",
   "license": "MIT",

@@ -4,6 +4,8 @@ Yet another inline switch on npm.
 
 Yes yes I know, you can define a variable and use a regular switch statement but we like to overengineer stuff, right?
 
+This also comes in handy in React/JSX when you'd like to use a switch but you need to return something.
+
 ## Usage
 
 What you learnt on YouTube:
