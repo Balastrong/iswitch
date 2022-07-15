@@ -35,4 +35,19 @@ describe('iswitch', () => {
       /^Duplicate keys: X, Y$/,
     );
   });
+
+  it('should handle functions in cases', () => {
+    const myFunction = (n: number) => n + 5;
+
+    expect(
+      iswitch('a', [
+        'a',
+        () => {
+          const myNumber = 1;
+          // Some complex logic here
+          return myFunction(myNumber);
+        },
+      ]),
+    ).toBe(6);
+  });
 });
